@@ -1,0 +1,264 @@
+.top {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    width: 1280px;
+    grid-column-gap: 0.5rem;
+    position: relative;
+}
+
+.box {
+    height: 300px;
+    position: relative;
+}
+
+.pink {
+    background-color: rgb(224, 155, 224);
+}
+
+.purple {
+    background-color: rgb(209, 146, 248);
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.small {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(244, 124, 144);
+    z-index: 2;
+    top: 20%;
+    left: 28%;
+}
+
+.reg {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 200, 59);
+    z-index: 1;
+    top: 20%;
+    right: 50%;
+}
+
+.big {
+    width: 340px;
+    height: 340px;
+    background-color: rgb(242, 194, 103);
+    z-index: 1;
+    top: 40%;
+    right: 70%;
+}
+
+.middle {
+    position: relative;
+    height: 450px;
+    width: 1280px;
+    margin-top: 0.5rem;
+}
+
+.blue {
+    background-color: rgb(161, 190, 237);
+    width: 1280px;
+    height: 450px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    position: absolute;
+}
+
+.grey {
+    border-bottom: 480px solid rgb(37, 37, 37);
+    z-index: 1;
+    bottom: 0;
+    right: 30%;
+}
+
+.black {    
+    border-bottom: 400px solid rgb(0, 0, 0);
+    z-index: 2;
+    top: 50px;
+    right: 5%;
+}
+
+.bottom {
+    width: 1280px;
+    height: 20px;
+    background-color: rgb(39, 39, 39);
+    margin-top: 0.5rem;
+}
+
+
+/* Media query for tablet */
+
+@media only screen and (max-width: 1024px) {
+    .top {
+        grid-template-columns: 30% 40% 30%;
+        grid-column-gap: 0.5rem;
+        position: relative;
+        width: 960px;
+    }
+
+    .box {
+        height: 200px;
+    }
+
+    .middle {
+        position: relative;
+        height: 350px;
+        margin-top: 0.5rem;
+        width: 960px;
+    }
+
+    .blue {
+        background-color: rgb(161, 190, 237);
+        height: 350px;
+        width: 960px;
+    }
+
+    .bottom {
+        height: 20px;
+        background-color: rgb(39, 39, 39);
+        margin-top: 0.5rem;
+        width: 960px;
+    }
+    
+    .small {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(244, 124, 144);
+        z-index: 2;
+        top: 20%;
+        left: 36%;
+    }
+    
+    .reg {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(236, 200, 59);
+        z-index: 1;
+        top: 20%;
+        right: 50%;
+    }
+    
+    .big {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(242, 194, 103);
+        z-index: 1;
+        top: 40%;
+        right: 65%;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        position: absolute;
+    }
+    
+    .grey {
+        border-bottom: 160px solid rgb(37, 37, 37);
+        z-index: 1;
+        bottom: 0px;
+        right: 260px;
+    }
+    
+    .black {    
+        border-bottom: 200px solid rgb(0, 0, 0);
+        z-index: 2;
+        top: 150px;
+        right: 30px;
+    }
+}
+
+/* Media query for mobile */
+
+@media only screen and (max-width: 480px) {
+    .top {
+        grid-template-columns: 30% 40% 30%;
+        grid-column-gap: 0.5rem;
+        position: relative;
+        width: 460px;
+    }
+
+    .box {
+        height: 150px;
+    }
+
+    .middle {
+        position: relative;
+        height: 200px;
+        margin-top: 0.5rem;
+        width: 460px;
+    }
+
+    .blue {
+        background-color: rgb(161, 190, 237);
+        height: 200px;
+        width: 460px;
+    }
+
+
+    .bottom {
+        height: 15px;
+        background-color: rgb(39, 39, 39);
+        margin-top: 0.5rem;
+        width: 460px;
+    }
+
+    .small {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(244, 124, 144);
+        z-index: 2;
+        top: 20%;
+        left: 30%;
+    }
+    
+    .reg {
+        width: 80px;
+        height: 80px;
+        background-color: rgb(236, 200, 59);
+        z-index: 1;
+        top: 20%;
+        right: 50%;
+    }
+    
+    .big {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(242, 194, 103);
+        z-index: 1;
+        top: 40%;
+        right: 65%;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        position: absolute;
+    }
+    
+    .grey {
+        border-bottom: 60px solid rgb(37, 37, 37);
+        z-index: 1;
+        bottom: 0px;
+        right: 150px;
+    }
+    
+    .black {    
+        border-bottom: 100px solid rgb(0, 0, 0);
+        z-index: 2;
+        top: 100px;
+        right: 20px;
+    }
+}
